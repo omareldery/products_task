@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:products_task/core/helper/colors_manager.dart';
 import 'package:products_task/features/recycler/data_layer/repos/product_repo.dart';
 import 'package:products_task/features/recycler/presentation_layer/manager/product_cubit.dart';
@@ -33,7 +31,7 @@ class RecyclerView extends StatelessWidget {
                             prefixIcon: Icon(Icons.search,color: ColorsManager.kPrimaryColor,),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.all(Radius.circular(26)),
-          
+
                             ),
                             focusedBorder:  OutlineInputBorder(
                               borderSide: BorderSide(color: ColorsManager.kPrimaryColor),
@@ -42,10 +40,10 @@ class RecyclerView extends StatelessWidget {
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(color: ColorsManager.kPrimaryColor),
                               borderRadius: BorderRadius.all(Radius.circular(26)),
-          
+
                             )
                         ),
-          
+
                       ),
                     ),
                   ),
