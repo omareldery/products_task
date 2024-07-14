@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:products_task/core/helper/colors_manager.dart';
 
 class RecyclerView extends StatelessWidget {
   const RecyclerView({super.key});
@@ -27,17 +28,17 @@ class RecyclerView extends StatelessWidget {
                 child: TextFormField(
                   decoration: const InputDecoration(
                       hintText: 'What do you search for?',
-                      prefixIcon: Icon(Icons.search,color: Color(0xFF102F6B),),
+                      prefixIcon: Icon(Icons.search,color: ColorsManager.kPrimaryColor,),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(26)),
 
                       ),
                     focusedBorder:  OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFF102F6B)),
+                      borderSide: BorderSide(color: ColorsManager.kPrimaryColor),
                       borderRadius: BorderRadius.all(Radius.circular(26)),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFF102F6B)),
+                      borderSide: BorderSide(color: ColorsManager.kPrimaryColor),
                       borderRadius: BorderRadius.all(Radius.circular(26)),
 
                     )
@@ -50,7 +51,7 @@ class RecyclerView extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(
                 Icons.shopping_cart_outlined,
-                color: Color(0xFF102F6B),
+                color: ColorsManager.kPrimaryColor,
               ),
             )
           ],
