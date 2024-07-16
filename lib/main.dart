@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:products_task/features/recycler/presentation_layer/views/recycler_view.dart';
 
-void main() {
+void main() async{
   runApp(const MyApp());
+  await ScreenUtil.ensureScreenSize();
+  WidgetsFlutterBinding.ensureInitialized();
 }
 
 class MyApp extends StatelessWidget {
@@ -11,12 +14,18 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white
+    return  ScreenUtilInit(
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      child: MaterialApp(
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white
+        ),
+        debugShowCheckedModeBanner: false,
+        home:  const RecyclerView(),
+
       ),
-      debugShowCheckedModeBanner: false,
-      home:  RecyclerView(),
     );
   }
 }

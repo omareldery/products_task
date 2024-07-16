@@ -2,7 +2,7 @@
 class Assets {
   Assets._();
 
-  static const String imagesRouteImage = 'assets/images/route_image.png';
+  static const String imagesFavImage1 = 'assets/images/fav_ima.png';
   static const String imagesRouteLogo = 'assets/images/route_logo.png';
 
 }
