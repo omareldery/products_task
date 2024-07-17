@@ -65,16 +65,16 @@ class ProductCard extends StatelessWidget {
                       children: [
                         const TextSpan(
                           text: 'Review ',
-                          style: TextStyle(color: ColorsManager.kPrimaryColor, fontSize: 16),
+                          style: TextStyle(color: ColorsManager.kPrimaryColor, fontSize: 15),
                         ),
                         TextSpan(
                           text: '(${product?.rating.toString() ?? '--'})',
-                          style: const TextStyle(color: ColorsManager.kPrimaryColor, fontSize: 16),
+                          style: const TextStyle(color: ColorsManager.kPrimaryColor, fontSize: 15),
                         ),
                       ],
                     ),
                   ),
-                  Icon(Icons.star, color: const Color(0xFFFDD407), size: 24.h),
+                  Icon(Icons.star, color: const Color(0xFFFDD407), size: 20.h),
                 ],
               ),
               SizedBox(height: 8.h),
@@ -83,11 +83,11 @@ class ProductCard extends StatelessWidget {
         ),
       ),
       Positioned(
-        bottom: 18.h,
-        right: 18.w,
+        bottom: 16.h,
+        right: 16.w,
         child: Container(
-          height: 30.h,
-          width: 30.w,
+          height: 25.h,
+          width: 25.w,
           decoration: BoxDecoration(
             color: ColorsManager.kPrimaryColor,
             borderRadius: BorderRadius.circular(24),
@@ -121,4 +121,3 @@ class ProductCard extends StatelessWidget {
     ]);
   }
 }
-

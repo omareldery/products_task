@@ -61,9 +61,9 @@ class RecyclerView extends StatelessWidget {
               Expanded(
                 child: BlocProvider(
                       create: (context) => ProductCubit(ProductRepository())..fetchProducts(),
-                      child: Padding(
-                        padding:  EdgeInsets.only(top: 16.h),
-                        child: const RecyclerBody(),
+                      child: const Padding(
+                        padding:  EdgeInsets.all(16),
+                        child: RecyclerBody(),
                       ),
                     ),
               ),
